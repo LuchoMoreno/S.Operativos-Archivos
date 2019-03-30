@@ -1,0 +1,18 @@
+Video random de como crear una maquina virtual con virtual box
+https://www.youtube.com/watch?v=ts-snPFH25c
+
+Video para que deje de mostrar solo el terminal
+https://www.youtube.com/watch?v=8dZkQxasuIo
+
+comandos:
+
+1 -sudo apt-get update
+2 -sudo apt-get upgrade
+3 -dpkg --configure -a
+4 -sudo apt-get install cinnamon-control-center-data
+5 -gdm3 --version
+6 -apt-get --reinstall install gdm3
+7 -apt-get --reinstall install gnome
+8 -apt-get --reinstall install gnome-shell
+9 -dpkg-reconfigure gdm3
+10-reboot
