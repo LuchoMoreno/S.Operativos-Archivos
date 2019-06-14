@@ -41,13 +41,12 @@ PID: ID DEL PROCESO. 	USUARIO: Quien creo el proceso 	PR: Prioridad del proceso 
 Salir: CRTL + Z
 
 ls -lth | more
-BG: Llevar o traer procesos del background. Poner procesos en pausa
+BG: Llevar o traer procesos del background. Poner procesos en pausa BAAR PROCESO
 FG: Toma el control segun el proceso
 JOBS: Los que estan corriendo.
 KILL PID
 KILL ALL
 PS -EF Muestra los procesos en consola.
-
 
 PROCESOS:
 R->Run
@@ -60,3 +59,7 @@ Stoped -> No lo veo.
 
 Matar zombie. Encontrar, y KILL PDI
 Si se le pone un & adelante se ejecuta en segundo plano. 
+
+
+
+USUARIOS - PERMISOS - MEMORIAS - S. CONTROL DE VERSIONES 
