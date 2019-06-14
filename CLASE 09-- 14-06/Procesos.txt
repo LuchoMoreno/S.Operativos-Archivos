@@ -1,0 +1,62 @@
+Los procesos que no podemos controlar, son los programas que permiten el funcionamiento del sistema operativo. Se
+llaman demonios. Dependen de otros procesos.
+
+
+Todo inicia en la memoria donde se guarda la entrada y salida de datos de los puertos en la computadora.
+
+BIOS: Entrada y salida estandar que tiene que tener cualquier computadora para que
+todos los sistemas operativos puedan utilizarlo. Genérico, para poder compartir.
+
+Es la primer pared de asbstraccion. Permite abstraerse del hardware.
+
+El primer proceso que se va a cargar en la memoria ram es la BIOS. Se tiene en memoria RAM.
+
+El segundo proceso es el bootloader. Permite seleccionar con qué sistema operativo quiero iniciar. De acá se puede
+manipular las direcciones donde voy a iniciar mi maquina.
+
+Magicnumber: Son 64 bites. 
+
+El tercero es el kernel (escrito en C): Cuando levanta, deja todos los procesos abiertos. Administra como los programas 
+acceden al hardware. Que informacion se va a cargar, y como se va a manipular la momoria ram, el procesador, el hardware
+y el software.
+
+En windows -> Mas funcionalidad grafica.
+En linux -> Mas funcionalidad con comandos.
+ 
+
+4) INIT: Main en C. Lo que hace es crear procesos. Estos procesos pueden tener una funcionalidad 
+determinada por un tiempo. Ademas hay procesos que son interactivos, se realiza una accion y se genera una 
+respuesta. 
+
+Cada uno de estos procesos, tiene una direccion de memoria. (Una memoria reservada) .
+Proceso zombie: Es un proceso el cual ya no tiene direccion de memoria. No está ni el proceso padre, ni el 
+proceso hijo. Solamente hay una posicion de memoria reservada.
+ 
+
+
+COMANDOS: 
+
+TOP: Muestra los procesos.
+PID: ID DEL PROCESO. 	USUARIO: Quien creo el proceso 	PR: Prioridad del proceso -> RT: 1-99 prioridad dada por otro proceso.
+Salir: CRTL + Z
+
+ls -lth | more
+BG: Llevar o traer procesos del background. Poner procesos en pausa
+FG: Toma el control segun el proceso
+JOBS: Los que estan corriendo.
+KILL PID
+KILL ALL
+PS -EF Muestra los procesos en consola.
+
+
+PROCESOS:
+R->Run
+S->Sleep
+Z->Zombie
+Swap -> No esta en memoria.
+Stoped -> No lo veo.
+
+
+
+Matar zombie. Encontrar, y KILL PDI
+Si se le pone un & adelante se ejecuta en segundo plano. 
