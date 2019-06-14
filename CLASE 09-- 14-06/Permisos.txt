@@ -1,0 +1,60 @@
+ls -l -> Muestra grupo de permisos.
+
+Los permisos pueden ser: R / W / X
+
+RWX		---		----
+Propietario	Grupo		Resto del mundo.
+
+111		000		000
+
+Dependiendo el permiso, en binario, es el numero que se le va a dar
+
+RWX = 111 = 7
+RW- = 110 = 6
+R-X = 101 = 5
+R-- = 100 = 4
+
+CHMOD XXX -> Propietario - Grupo - Resto del mundo.
+
+CHMOD -> Es un proceso que va al puntero, toma la primer cadena de bytes, y los modifica para
+dar o quitar permisos.
+
+useradd pepito -> Agregar usuario. Tambien se le puede poner una fecha para identificar cuando el usuario dejará de 
+tener permisos. Ademas se le puede agregar el interprete de comandos. -s pasandole donde está la nueva consola. 	
+A partir de ahora cada vez que el usuario abre la consola, tendrá la que se le asignó
+
+sudo passwrd pepito -> Pone la contraseña de pepito. Hay que insertarla luego 2 veces más.
+
+login -> Con esto entro al usuario. Hay que poner nombre y contraseña
+
+userdel pepito -> RIP PEPITO LO ACABAS DE MATAR. F 
+ 
+useradd -m -d /home/Maria Maria -> Creas a maria en la carpeta /home/Maria
+
+usermod -> Modificar.
+
+cat /etc/passwd -> Muestra los usuarios y demas cosas.
+
+
+sudo useradd -G -> Agrega un grupo // -G -> Cambia grupo principal -g Agrega grupos secundarios.
+
+
+cat /etc/group -> Muestra los grupos
+
+sudo groupadd empleado -> Crea un grupo de empleados.
+
+chgroup // chgrp Maria compartidaa // Comparte a Maria la carpeta compartidaa.
+
+
+sudo usermod -g alumno Maria
+
+
+cd 
+cd ./config
+
+user.dirs.dirs
+
+¿COMO HABILITO Y DESHABILITO?
+
+sudo passwd -l Maria // HABILITA
+sudo passwd -u Maria // DESHABILITA
