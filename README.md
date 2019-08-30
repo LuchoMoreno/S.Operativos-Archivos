@@ -4,7 +4,7 @@
 :black_circle: Acá están todos los archivos de la cursada de Sistemas Operativos, incluyendo resumenes por clase, y resumen general de todo el cuatrimestre (teoría).
 
 
-### :diamonds:CLASES WORD
+### :diamonds: CLASES WORD
 - En cada archivo word se encuentra un resumen de lo visto en clase, incluyendo los comandos de linux.
 
 
